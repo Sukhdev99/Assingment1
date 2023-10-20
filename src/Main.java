@@ -25,6 +25,12 @@ public class Main {
             double third_side = vertices[2].distance(vertices[0]);
             return first_side + second_side + third_side; // parameter of triangle
         }
+        boolean verify_isosceles(){
+            double first_side = vertices[0].distance(vertices[1]);
+            double second_side = vertices[1].distance(vertices[2]);
+            double third_side = vertices[2].distance(vertices[0]);
+            return first_side == second_side || first_side == third_side || second_side == third_side;
+        }
 
     }
 
