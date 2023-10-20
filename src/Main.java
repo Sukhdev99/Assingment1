@@ -13,6 +13,15 @@ public class Main {
             // calculating distance between the 2 points that user has added.
         }
     }
+    public static class Triangle { // class for triangles
+        coorditanes[] vertices;
+
+        Triangle(coorditanes[] vertices) { // this method has constructor for vertices of triangle
+            this.vertices = vertices;
+        }
+
+
+    }
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
