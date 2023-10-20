@@ -51,6 +51,16 @@ public class Main {
             }
             t[i] = new Triangle(vertices);
         }
+        // printing the result
+        for (int z = 0; z < number_of_triangles; z++) {
+            System.out.println("Triangle " + (z + 1));
+            System.out.println("Perimeter: " + t[z].perimeter());
+            if (t[z].verify_isosceles()) { // thos block will run if coordinates of triangle provided by user is isosceles.
+                System.out.println("The triangle is isosceles");
+            } else {
+                System.out.println("The triangle is not isosceles");
+            }
+        }
 
     }
 }
