@@ -1,8 +1,18 @@
 import java.util.Scanner;
-
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
 public class Main {
+    public static class coorditanes {
+        double x;
+        double y;
+
+        public coorditanes(double x, double y) { // this method has constructor to get coordinates
+            this.x = x;
+            this.y = y;
+        }
+        double distance(coorditanes points) {
+            return Math.sqrt(Math.pow(this.x - points.x, 2) + Math.pow(this.y - points.y, 2));
+            // calculating distance between the 2 points that user has added.
+        }
+    }
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
