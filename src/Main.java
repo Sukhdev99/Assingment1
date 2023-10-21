@@ -40,6 +40,7 @@ public class Main {
         int number_of_triangles = input.nextInt(); // number of triangles
         Triangle[] t = new Triangle[number_of_triangles];
         for (int i = 0; i < number_of_triangles; i++) { // this loop will ask the user for coordinates x and y for 3 sides.
+            System.out.println("Enter the coordinates of " +(i+1)+" Triangle");
             coorditanes[] vertices = new coorditanes[3];
             for (int j = 0; j < 3; j++) {
                 System.out.println("Construction of a new point");
@@ -53,9 +54,9 @@ public class Main {
         }
         // printing the result
         for (int z = 0; z < number_of_triangles; z++) {
-            System.out.println("Triangle " + (z + 1));
+            System.out.println((z + 1)+" Triangle ");
             System.out.println("Perimeter: " + t[z].perimeter());
-            if (t[z].verify_isosceles()) { // thos block will run if coordinates of triangle provided by user is isosceles.
+            if (t[z].verify_isosceles()) { // this block will run if coordinates of triangle provided by user is isosceles.
                 System.out.println("The triangle is isosceles");
             } else {
                 System.out.println("The triangle is not isosceles");
